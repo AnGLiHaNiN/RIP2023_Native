@@ -76,6 +76,9 @@ class LoginViewController: UIViewController {
             showErrorMessage("Please enter both username and password.")
             return
         }
+        
+        usernameTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
 
         NetworkService.shared.login(username: username, password: password) { result in
             switch result {
@@ -90,6 +93,8 @@ class LoginViewController: UIViewController {
     }
 
     @objc private func logoutButtonTapped() {
+        usernameTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
         NetworkService.shared.logout { result in
             switch result {
             case .success(let model):
@@ -102,6 +107,8 @@ class LoginViewController: UIViewController {
     }
 
     @objc private func registerButtonTapped() {
+        usernameTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
         guard let username = usernameTextField.text, let password = passwordTextField.text else {
             showErrorMessage("Please enter both username and password.")
             return

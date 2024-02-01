@@ -29,7 +29,7 @@ enum APIService: TargetType {
     case getOneMedicine(medicineID: String)
 
     var baseURL: URL {
-        return URL(string: "http://0.0.0.0:8000")!
+        return URL(string: "http://172.20.10.13:8000")!
     }
 
     var path: String {
@@ -106,7 +106,7 @@ enum APIService: TargetType {
         case .login:
             return ["Content-Type": "application/json"]
         default:
-            if let token = getToken() {
+            if let token = APIService.getToken() {
                 return ["Content-Type": "application/json", "Authorization": "Bearer \(token)"]
             } else {
                 return nil
@@ -115,7 +115,7 @@ enum APIService: TargetType {
         }
     }
     
-    func getToken() -> String? {
+    static func getToken() -> String? {
         let keychain = KeychainSwift()
         return keychain.get("authToken")
     }

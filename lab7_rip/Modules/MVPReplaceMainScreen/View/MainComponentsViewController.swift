@@ -78,10 +78,18 @@ final class MainComponentsViewController: UIViewController {
                                                      target: self,
                                                      action: #selector(findButtonTapped))
             
-            leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "basket"),
-                                                    style: .done,
-                                                    target: self,
-                                                    action: #selector(basketButtonTapped))
+            if let token = APIService.getToken() {
+                leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "basket"),
+                                                        style: .done,
+                                                        target: self,
+                                                        action: #selector(basketButtonTapped))
+            } else {
+                leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: ""),
+                                                        style: .done,
+                                                        target: self,
+                                                        action: #selector(basketButtonTapped))
+            }
+            
         case .basket:
             rightBarButtonItem = UIBarButtonItem(title: "Создать заявку",
                                                      style: .done,

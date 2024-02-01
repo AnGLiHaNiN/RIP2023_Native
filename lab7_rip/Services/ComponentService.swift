@@ -12,7 +12,7 @@ enum NetworkError: Error {
     case emptyData
 }
 
-let ip = "0.0.0.0"
+let ip = "172.20.10.13"
 final class ComponentService {
     private init() {}
     static let shared = ComponentService()

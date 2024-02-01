@@ -57,7 +57,7 @@ final class MainComponentsPresenter {
                 medecineBasketID = model.draftMedicine
                 
                 for component in model.components {
-                    var imageString = component.imageUrl.replacingOccurrences(of: "localhost", with: "0.0.0.0")
+                    var imageString = component.imageUrl.replacingOccurrences(of: "localhost", with: "172.20.10.13")
                     
                     group.enter()
                     if let url = URL(string: imageString) {
@@ -127,7 +127,7 @@ final class MainComponentsPresenter {
                 let group = DispatchGroup()
                 
                 for component in model.components {
-                    var imageString = component.imageUrl.replacingOccurrences(of: "localhost", with: "0.0.0.0")
+                    var imageString = component.imageUrl.replacingOccurrences(of: "localhost", with: "172.20.10.13")
                     
                     group.enter()
                     if let url = URL(string: imageString) {

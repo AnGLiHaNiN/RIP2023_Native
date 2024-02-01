@@ -24,13 +24,9 @@
 		87670E172B69600A0030A999 /* MedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87670E162B69600A0030A999 /* MedicineViewController.swift */; };
 		87670E192B6998960030A999 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87670E182B6998960030A999 /* ProfileViewController.swift */; };
 		87670E1D2B699B1B0030A999 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87670E1C2B699B1B0030A999 /* AuthController.swift */; };
-		87670E202B699B530030A999 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 87670E1F2B699B530030A999 /* Alamofire */; };
-		87670E232B699F960030A999 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 87670E222B699F960030A999 /* SnapKit */; };
-		87670E252B699F960030A999 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 87670E242B699F960030A999 /* SnapKit-Dynamic */; };
-		87670E282B699FC80030A999 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 87670E272B699FC80030A999 /* CombineMoya */; };
-		87670E2A2B699FC80030A999 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 87670E292B699FC80030A999 /* Moya */; };
-		87670E2C2B699FC80030A999 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 87670E2B2B699FC80030A999 /* ReactiveMoya */; };
-		87670E2E2B699FC80030A999 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 87670E2D2B699FC80030A999 /* RxMoya */; };
+		87670E202B699B530030A999 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		87670E282B699FC80030A999 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		87670E2A2B699FC80030A999 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		87670E302B69A85A0030A999 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87670E2F2B69A85A0030A999 /* APIService.swift */; };
 		87670E332B69BBE40030A999 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87670E322B69BBE40030A999 /* NetworkService.swift */; };
 		87670E392B69C3A60030A999 /* ComponentsListResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87670E382B69C3A60030A999 /* ComponentsListResponseModel.swift */; };
@@ -45,11 +41,29 @@
 		87670E4F2B69CFD70030A999 /* ComponentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87670E4E2B69CFD70030A999 /* ComponentCell.swift */; };
 		87670E522B69D43D0030A999 /* MainComponentsViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87670E512B69D43D0030A999 /* MainComponentsViewItem.swift */; };
 		87670E542B6A63A00030A999 /* DetailInformationViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87670E532B6A63A00030A999 /* DetailInformationViewController2.swift */; };
-		87670E572B6AD6B90030A999 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 87670E562B6AD6B90030A999 /* KeychainSwift */; };
-		87670E592B6AF8FC0030A999 /* MedecineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87670E582B6AF8FC0030A999 /* MedecineCell.swift */; };
-		87670E5B2B6B0F240030A999 /* BasketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87670E5A2B6B0F240030A999 /* BasketCell.swift */; };
-		87670E5D2B6B1C830030A999 /* BasketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87670E5C2B6B1C830030A999 /* BasketCell.swift */; };
+		87670E712B6B9F570030A999 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 87670E702B6B9F570030A999 /* KeychainSwift */; };
+		87670E742B6BA1540030A999 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 87670E732B6BA1540030A999 /* CombineMoya */; };
+		87670E762B6BA1540030A999 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 87670E752B6BA1540030A999 /* Moya */; };
+		87670E782B6BA1540030A999 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 87670E772B6BA1540030A999 /* ReactiveMoya */; };
+		87670E7A2B6BA1540030A999 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 87670E792B6BA1540030A999 /* RxMoya */; };
+		87670E7B2B6BA1C00030A999 /* BasketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87670E5A2B6B0F240030A999 /* BasketCell.swift */; };
+		87670E7C2B6BA1D10030A999 /* MedecineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87670E582B6AF8FC0030A999 /* MedecineCell.swift */; };
+		87670E812B6BA3E80030A999 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 87670E802B6BA3E80030A999 /* SnapKit */; };
+		87670E862B6BA42D0030A999 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 87670E852B6BA42D0030A999 /* SnapKit */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		87670E7E2B6BA3880030A999 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		07746AB52B272EE8008965B9 /* lab7_rip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab7_rip.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,14 +109,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87670E202B699B530030A999 /* Alamofire in Frameworks */,
-				87670E232B699F960030A999 /* SnapKit in Frameworks */,
-				87670E282B699FC80030A999 /* CombineMoya in Frameworks */,
-				87670E2A2B699FC80030A999 /* Moya in Frameworks */,
-				87670E2E2B699FC80030A999 /* RxMoya in Frameworks */,
-				87670E252B699F960030A999 /* SnapKit-Dynamic in Frameworks */,
-				87670E572B6AD6B90030A999 /* KeychainSwift in Frameworks */,
-				87670E2C2B699FC80030A999 /* ReactiveMoya in Frameworks */,
+				87670E7A2B6BA1540030A999 /* RxMoya in Frameworks */,
+				87670E712B6B9F570030A999 /* KeychainSwift in Frameworks */,
+				87670E762B6BA1540030A999 /* Moya in Frameworks */,
+				87670E202B699B530030A999 /* (null) in Frameworks */,
+				87670E742B6BA1540030A999 /* CombineMoya in Frameworks */,
+				87670E782B6BA1540030A999 /* ReactiveMoya in Frameworks */,
+				87670E812B6BA3E80030A999 /* SnapKit in Frameworks */,
+				87670E282B699FC80030A999 /* (null) in Frameworks */,
+				87670E2A2B699FC80030A999 /* (null) in Frameworks */,
+				87670E862B6BA42D0030A999 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +130,7 @@
 			children = (
 				07746AB72B272EE8008965B9 /* lab7_rip */,
 				07746AB62B272EE8008965B9 /* Products */,
+				87670E7F2B6BA3E20030A999 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -327,6 +344,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		87670E7F2B6BA3E20030A999 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -337,6 +361,7 @@
 				07746AB12B272EE8008965B9 /* Sources */,
 				07746AB22B272EE8008965B9 /* Frameworks */,
 				07746AB32B272EE8008965B9 /* Resources */,
+				87670E7E2B6BA3880030A999 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,14 +369,13 @@
 			);
 			name = lab7_rip;
 			packageProductDependencies = (
-				87670E1F2B699B530030A999 /* Alamofire */,
-				87670E222B699F960030A999 /* SnapKit */,
-				87670E242B699F960030A999 /* SnapKit-Dynamic */,
-				87670E272B699FC80030A999 /* CombineMoya */,
-				87670E292B699FC80030A999 /* Moya */,
-				87670E2B2B699FC80030A999 /* ReactiveMoya */,
-				87670E2D2B699FC80030A999 /* RxMoya */,
-				87670E562B6AD6B90030A999 /* KeychainSwift */,
+				87670E702B6B9F570030A999 /* KeychainSwift */,
+				87670E732B6BA1540030A999 /* CombineMoya */,
+				87670E752B6BA1540030A999 /* Moya */,
+				87670E772B6BA1540030A999 /* ReactiveMoya */,
+				87670E792B6BA1540030A999 /* RxMoya */,
+				87670E802B6BA3E80030A999 /* SnapKit */,
+				87670E852B6BA42D0030A999 /* SnapKit */,
 			);
 			productName = lab7_rip;
 			productReference = 07746AB52B272EE8008965B9 /* lab7_rip.app */;
@@ -382,10 +406,9 @@
 			);
 			mainGroup = 07746AAC2B272EE8008965B9;
 			packageReferences = (
-				87670E1E2B699B530030A999 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				87670E212B699F960030A999 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				87670E262B699FC80030A999 /* XCRemoteSwiftPackageReference "Moya" */,
-				87670E552B6AD6B80030A999 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				87670E6A2B6B9F3D0030A999 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				87670E6F2B6B9F570030A999 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				87670E722B6BA1540030A999 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 07746AB62B272EE8008965B9 /* Products */;
 			projectDirPath = "";
@@ -414,15 +437,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87670E5D2B6B1C830030A999 /* BasketCell.swift in Sources */,
 				87670E522B69D43D0030A999 /* MainComponentsViewItem.swift in Sources */,
 				87670E172B69600A0030A999 /* MedicineViewController.swift in Sources */,
 				87670E4C2B69CE210030A999 /* UICollectionViewLayoutExtention.swift in Sources */,
 				07746ADA2B272F4A008965B9 /* DetailInformationViewController.swift in Sources */,
 				87670E3B2B69C5160030A999 /* MedicineListResponseModel.swift in Sources */,
+				87670E7C2B6BA1D10030A999 /* MedecineCell.swift in Sources */,
 				87670E3F2B69C9D70030A999 /* ComponentsListModel.swift in Sources */,
 				07746ADE2B272F76008965B9 /* ImageManager.swift in Sources */,
-				87670E5B2B6B0F240030A999 /* BasketCell.swift in Sources */,
+				87670E7B2B6BA1C00030A999 /* BasketCell.swift in Sources */,
 				87670E472B69CBF70030A999 /* MainComponentsViewController.swift in Sources */,
 				87670E462B69CBF70030A999 /* MainComponentsRouter.swift in Sources */,
 				078FA62B2B2C5DA5007166DB /* ComponentUIModel.swift in Sources */,
@@ -440,7 +463,6 @@
 				07746AD62B272F3C008965B9 /* ComponentService.swift in Sources */,
 				07746ABB2B272EE8008965B9 /* SceneDelegate.swift in Sources */,
 				87670E542B6A63A00030A999 /* DetailInformationViewController2.swift in Sources */,
-				87670E592B6AF8FC0030A999 /* MedecineCell.swift in Sources */,
 				87670E392B69C3A60030A999 /* ComponentsListResponseModel.swift in Sources */,
 				87670E192B6998960030A999 /* ProfileViewController.swift in Sources */,
 				07746AE02B272F97008965B9 /* ComponentTableViewCell.swift in Sources */,
@@ -641,6 +663,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vaskin200333.-ab7-rip";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -673,15 +696,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		87670E1E2B699B530030A999 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.8.1;
-			};
-		};
-		87670E212B699F960030A999 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		87670E6A2B6B9F3D0030A999 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -689,15 +704,7 @@
 				minimumVersion = 5.7.0;
 			};
 		};
-		87670E262B699FC80030A999 /* XCRemoteSwiftPackageReference "Moya" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 15.0.3;
-			};
-		};
-		87670E552B6AD6B80030A999 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+		87670E6F2B6B9F570030A999 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
 			requirement = {
@@ -705,48 +712,51 @@
 				minimumVersion = 21.0.0;
 			};
 		};
+		87670E722B6BA1540030A999 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		87670E1F2B699B530030A999 /* Alamofire */ = {
+		87670E702B6B9F570030A999 /* KeychainSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 87670E1E2B699B530030A999 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
+			package = 87670E6F2B6B9F570030A999 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
 		};
-		87670E222B699F960030A999 /* SnapKit */ = {
+		87670E732B6BA1540030A999 /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 87670E212B699F960030A999 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		87670E242B699F960030A999 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 87670E212B699F960030A999 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-		};
-		87670E272B699FC80030A999 /* CombineMoya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 87670E262B699FC80030A999 /* XCRemoteSwiftPackageReference "Moya" */;
+			package = 87670E722B6BA1540030A999 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = CombineMoya;
 		};
-		87670E292B699FC80030A999 /* Moya */ = {
+		87670E752B6BA1540030A999 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 87670E262B699FC80030A999 /* XCRemoteSwiftPackageReference "Moya" */;
+			package = 87670E722B6BA1540030A999 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
 		};
-		87670E2B2B699FC80030A999 /* ReactiveMoya */ = {
+		87670E772B6BA1540030A999 /* ReactiveMoya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 87670E262B699FC80030A999 /* XCRemoteSwiftPackageReference "Moya" */;
+			package = 87670E722B6BA1540030A999 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = ReactiveMoya;
 		};
-		87670E2D2B699FC80030A999 /* RxMoya */ = {
+		87670E792B6BA1540030A999 /* RxMoya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 87670E262B699FC80030A999 /* XCRemoteSwiftPackageReference "Moya" */;
+			package = 87670E722B6BA1540030A999 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
 		};
-		87670E562B6AD6B90030A999 /* KeychainSwift */ = {
+		87670E802B6BA3E80030A999 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 87670E552B6AD6B80030A999 /* XCRemoteSwiftPackageReference "keychain-swift" */;
-			productName = KeychainSwift;
+			package = 87670E6A2B6B9F3D0030A999 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		87670E852B6BA42D0030A999 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87670E6A2B6B9F3D0030A999 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

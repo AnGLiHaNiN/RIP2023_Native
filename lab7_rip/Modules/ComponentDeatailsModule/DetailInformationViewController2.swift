@@ -50,7 +50,7 @@ extension DetailInformationViewController2 {
                 
             case let .success(data):
                 
-                let imageString = data.imageUrl.replacingOccurrences(of: "localhost", with: "0.0.0.0")
+                let imageString = data.imageUrl.replacingOccurrences(of: "localhost", with: "172.20.10.13")
                 let group = DispatchGroup()
                 group.enter()
                 if let url = URL(string: imageString) {
