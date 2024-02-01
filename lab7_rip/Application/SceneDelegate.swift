@@ -15,9 +15,36 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = scene as? UIWindowScene else { return }
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = UINavigationController(rootViewController: MedicineViewController())
+
+        let tabBarController = UITabBarController()
+
+        let componentViewController = MainComponentsBuilder.build(type: .components)
+        let medicineViewController = MainComponentsBuilder.build(type: .medecine)
+        let profileViewController = LoginViewController()
+
+        let componentNavigationController = UINavigationController(rootViewController: componentViewController)
+        let medicineNavigationController = UINavigationController(rootViewController: medicineViewController)
+        let profileNavigationController = UINavigationController(rootViewController: profileViewController)
+
+        componentViewController.title = "Компоненты"
+        componentViewController.tabBarItem.image = UIImage(systemName: "doc.text")
+
+        medicineViewController.title = "Медицина"
+        medicineViewController.tabBarItem.image = UIImage(systemName: "doc.richtext.fill.ar")
+        
+        profileViewController.title = "Профиль"
+        profileViewController.tabBarItem.image = UIImage(systemName: "person.fill")
+        
+        componentNavigationController.tabBarItem = componentViewController.tabBarItem
+        medicineNavigationController.tabBarItem = medicineViewController.tabBarItem
+        profileNavigationController.tabBarItem = profileViewController.tabBarItem
+
+        tabBarController.viewControllers = [componentNavigationController, medicineNavigationController, profileNavigationController]
+
+        window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
     }
+
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

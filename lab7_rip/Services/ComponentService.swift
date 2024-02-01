@@ -1,5 +1,5 @@
 //
-//  MedicineService.swift
+//  ComponentService.swift
 //  yourProjectName
 //
 //  Created by Mikhail on 04.12.2023.
@@ -12,15 +12,15 @@ enum NetworkError: Error {
     case emptyData
 }
 
-let ip = "172.20.10.13"
-final class MedicineService {
+let ip = "0.0.0.0"
+final class ComponentService {
     private init() {}
-    static let shared = MedicineService()
+    static let shared = ComponentService()
 
-    func getMedicineData(with title: String?,
-                        completion: @escaping (Result<MedicineApiModel, Error>) -> Void) {
+    func getComponentData(with title: String?,
+                        completion: @escaping (Result<ComponentResponseModel, Error>) -> Void) {
 
-        var urlString = "http://\(ip):8000/api/medicines"
+        var urlString = "http://\(ip):8000/api/components"
 
         if let title {
             urlString += "?name=\(title)"
@@ -44,7 +44,7 @@ final class MedicineService {
             }
 
             do {
-                let catalogData = try JSONDecoder().decode(MedicineApiModel.self, from: data)
+                let catalogData = try JSONDecoder().decode(ComponentResponseModel.self, from: data)
                 completion(.success(catalogData))
             } catch let error {
                 completion(.failure(error))

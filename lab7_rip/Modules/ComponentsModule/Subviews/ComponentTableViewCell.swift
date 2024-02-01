@@ -1,5 +1,5 @@
 //
-//  MedicineTableViewCell.swift
+//  ComponentTableViewCell.swift
 //  yourProjectName
 //
 //  Created by Mikhail on 04.12.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MedicineTableViewCell: UITableViewCell {
+final class ComponentTableViewCell: UITableViewCell {
     private let titleLabel: UILabel = UILabel()
     private let descriptionLabel: UILabel = UILabel()
     private let photoImageView = CustomImageView()
@@ -31,7 +31,7 @@ final class MedicineTableViewCell: UITableViewCell {
 }
 
 //MARK: - Life circle
-extension MedicineTableViewCell {
+extension ComponentTableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         photoImageView.image = nil
@@ -39,8 +39,8 @@ extension MedicineTableViewCell {
 }
 
 //MARK: - methods
-extension MedicineTableViewCell {
-    func cellConfigure(with model: MedicineUIModel) {
+extension ComponentTableViewCell {
+    func cellConfigure(with model: ComponentUIModel) {
         print("cellConfigure", model.imageUrl)
         guard let photoUrl = URL(string: "http://\(model.imageUrl)") else {
             print("Не получилось создать url 2")
@@ -54,7 +54,7 @@ extension MedicineTableViewCell {
 }
 
 //MARK: - private methods
-private extension MedicineTableViewCell {
+private extension ComponentTableViewCell {
     func setVisualAppearance() {
         photoImageView.contentMode = .scaleAspectFit // обрезаем фото
         photoImageView.clipsToBounds = true

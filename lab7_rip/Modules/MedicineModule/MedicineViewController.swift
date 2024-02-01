@@ -1,5 +1,5 @@
 //
-//  DetailInformationViewController.swift
+//  MedicineViewController.swift
 //  yourProjectName
 //
 //  Created by Mikhail on 11.12.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailInformationViewController: UIViewController {
+class MedicineViewController: UIViewController {
     private let  titleLabel = UILabel()
     private let  descriptionaLabel = UILabel()
     private let  factoryLabel = UILabel()
@@ -30,8 +30,8 @@ class DetailInformationViewController: UIViewController {
 }
 
 //MARK: - methods
-extension DetailInformationViewController {
-    func datailConfigure(with model: MedicineUIModel) {
+extension MedicineViewController {
+    func datailConfigure(with model: ComponentUIModel) {
 
 //        print(model.imageUrl.replacingOccurrences(of: "localhost", with: "172.20.10.2"))
         guard let photoUrl = URL(string: "http://\(model.imageUrl)") else {
@@ -41,14 +41,15 @@ extension DetailInformationViewController {
 
         photoImageView.loadImage(with: photoUrl)
         titleLabel.text = model.name
-        descriptionaLabel.text = model.dosage
-        factoryLabel.text = model.manufacturer
+        descriptionaLabel.text = String(model.amount)
+        factoryLabel.text = model.worldName
     }
 }
 
 //MARK: - private methods
-private extension DetailInformationViewController {
+private extension MedicineViewController {
     func setVisualAppearance() {
+        view.backgroundColor = .systemBackground
         photoImageView.contentMode = .scaleAspectFit
         photoImageView.clipsToBounds = true
         [factoryLabel, descriptionaLabel, titleLabel].forEach {

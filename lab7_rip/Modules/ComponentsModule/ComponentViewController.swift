@@ -1,5 +1,5 @@
 //
-//  MedicineViewController.swift
+//  ComponentViewController.swift
 //  yourProjectName
 //
 //  Created by Mikhail on 16.10.2023.
@@ -7,16 +7,16 @@
 
 import UIKit
 
-class MedicineViewController: UIViewController {
+class ComponentViewController: UIViewController {
 
     private let imageManager = ImageManager.shared
-    private let model = MedicineModel()
-    private var categoryModel: [MedicineUIModel] = []
+    private let model = ComponentModel()
+    private var categoryModel: [ComponentUIModel] = []
     private lazy var catalogTableView: UITableView = {
         let tableView = UITableView()
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(MedicineTableViewCell.self, forCellReuseIdentifier: "MedicineCell")
+        tableView.register(ComponentTableViewCell.self, forCellReuseIdentifier: "ComponentCell")
         return tableView
     }()
 
@@ -37,8 +37,8 @@ class MedicineViewController: UIViewController {
         navigationItem.leftBarButtonItem = leftBarButtonItem
 
         view.addSubview(catalogTableView)
-        setupMedicineTableView()
-        loadMedicine()
+        setupComponentTableView()
+        loadComponent()
     }
     
     @objc
@@ -75,7 +75,7 @@ class MedicineViewController: UIViewController {
     private func handleSearch(_ type: String?) {
 
         // Your existing code to load data based on type and price
-        model.loadMedicine(with: type) { [weak self] result in
+        model.loadComponent(with: type) { [weak self] result in
             switch result {
             case .success(let data):
                 DispatchQueue.main.async {
@@ -91,11 +91,11 @@ class MedicineViewController: UIViewController {
     
     @objc
     private func reloaddButtonTapped() {
-        loadMedicine()
+        loadComponent()
     }
     
     // задаем отступы (в данном слечае прибито к краям экрана)
-    private func setupMedicineTableView() {
+    private func setupComponentTableView() {
         catalogTableView.translatesAutoresizingMaskIntoConstraints = false
         catalogTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         catalogTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
@@ -103,8 +103,8 @@ class MedicineViewController: UIViewController {
         catalogTableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor).isActive = true
     }
     
-    private func loadMedicine() {
-        model.loadMedicine { [weak self] result in
+    private func loadComponent() {
+        model.loadComponent { [weak self] result in
             switch result {
             case .success(let data):
                 DispatchQueue.main.async {
@@ -119,13 +119,13 @@ class MedicineViewController: UIViewController {
     }
 }
 
-extension MedicineViewController: UITableViewDelegate, UITableViewDataSource {
+extension ComponentViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { // колечество ячеек в таблице
         categoryModel.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell { // создание ячеек
-        guard let cell =  tableView.dequeueReusableCell(withIdentifier: "MedicineCell", for: indexPath) as? MedicineTableViewCell else {
+        guard let cell =  tableView.dequeueReusableCell(withIdentifier: "ComponentCell", for: indexPath) as? ComponentTableViewCell else {
             return .init()
         }
         cell.cellConfigure(with: categoryModel[indexPath.row])
@@ -147,6 +147,3 @@ extension MedicineViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
 }
-
-
-
